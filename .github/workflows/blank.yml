@@ -28,3 +28,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Set up ramdisk
         run: diskutil erasevolume HFS+ 'RAM Disk' `hdiutil attach -nobrowse -nomount ram://2097152`
+      - name: Stats
+        run: df
