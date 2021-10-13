@@ -30,3 +30,7 @@ jobs:
         run: diskutil erasevolume HFS+ 'RAM Disk' `hdiutil attach -nobrowse -nomount ram://2097152`
       - name: Stats
         run: df
+      - name: Touch
+        run: touch '/Volumes/RAM Disk/test.txt'
+      - name: ls
+        run: ls '/Volumes/RAM Disk'
